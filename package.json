@@ -1,0 +1,56 @@
+{
+  "name": "disable-nuget-restore",
+  "version": "1.0.0",
+  "description": "Disable nuget package restore script",
+  "repository": "marcobarcelos/disable-nuget-restore",
+  "main": "dist/index.js",
+  "bin": {
+    "disable-nuget-restore": "dist/cli.js"
+  },
+  "scripts": {
+    "prepublish": "babel lib --out-dir=dist"
+  },
+  "keywords": [
+    "disable",
+    "nuget",
+    "package",
+    "restore",
+    "script",
+    "cli",
+    "visual",
+    "studio",
+    "vs",
+    "csharp",
+    "project",
+    "csproj",
+    "solution",
+    "sln"
+  ],
+  "author": {
+    "name": "Marco Barcelos",
+    "email": "me@marcobarcelos.com",
+    "url": "marcobarcelos.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "babel-runtime": "^6.9.2",
+    "chalk": "^1.1.3",
+    "del": "^2.2.0",
+    "glob": "^7.0.3",
+    "pify": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0"
+  },
+  "babel": {
+    "plugins": [
+      "transform-runtime"
+    ],
+    "presets": [
+      "es2015"
+    ],
+    "sourceMaps": "inline"
+  }
+}
